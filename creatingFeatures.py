@@ -648,7 +648,8 @@ class Features:
             name, sequence = i[0], re.sub('-', '', i[1])
             code = []
             for p in property:
-                code = code + self.Count2(group1[p], sequence) + self.Count2(group2[p], sequence) + self.Count2(group3[p], sequence)
+                code = code + self.Count2(group1[p], sequence) + self.Count2(group2[p], sequence) + self.Count2(
+                    group3[p], sequence)
             encodings.append(code)
         return np.array(encodings, dtype=float), header
 
@@ -736,3 +737,7 @@ class Features:
 
     def Rvalue(self, aa1, aa2, AADict, Matrix):
         return sum([(Matrix[i][AADict[aa1]] - Matrix[i][AADict[aa2]]) ** 2 for i in range(len(Matrix))]) / len(Matrix)
+
+import sys
+n = int(sys.argv[1])
+print(n+1)

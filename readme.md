@@ -36,5 +36,5 @@ How to list things you need to use the software and how to install them.
 Run the command in your terminal.
 * cmd
   ```sh
-  python perceptron.py TR_pos_SPIDER.txt TR_neg_SPIDER.txt TS_pos_SPIDER.txt TS_neg_SPIDER.txt
+  python perceptron.py TR_neg_SPIDER TR_pos_SPIDER TS_neg_SPIDER TS_pos_SPIDER     
   ```
